@@ -1,4 +1,4 @@
-def prep_lists_for_mongo(titles,prices,mileages):
+def prep_lists_for_mongo(titles,years,prices,mileages):
     """
     Takes lists of scraping results for:
         titles, prices, and mileages
@@ -9,6 +9,7 @@ def prep_lists_for_mongo(titles,prices,mileages):
     autos = []
     for i in range(n):
         autos.append({'title':titles[i]
+                      ,'year':years[i]
                       ,'price':prices[i]
                       ,'miles':mileages[i]
                      })
