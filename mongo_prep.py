@@ -5,6 +5,7 @@ def prep_lists_for_mongo(titles,prices,mileages):
     and transforms into list of dictionaries
     Returns: list of dictionaries; each dict has one auto result
     """
+    n = len(titles)
     autos = []
     for i in range(n):
         autos.append({'title':titles[i]
